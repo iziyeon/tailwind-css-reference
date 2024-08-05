@@ -35,7 +35,19 @@ npm install tailwindcss postcss autoprefixer
 npx tailwindcss init -p
 ```
 
-3. config 파일 content 작성
+3. `tailwind.config.js` 파일 content 작성
+
+```powershell
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+};
+```
+
 4. `index.css`
 
 ```powershell
