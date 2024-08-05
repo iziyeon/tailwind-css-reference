@@ -23,23 +23,29 @@
 
 ## 기본 요구 사항
 
-- 1. tailwindcss 설치
-  ```powershell
-  npm install tailwindcss postcss autoprefixer
-  ```
-  1. config 파일 생성
-  ```powershell
-  npx tailwindcss init -p
-  ```
-  1. config 파일 content 작성
-  2. `index.css`
-  ```powershell
-  @tailwind base;
-  @tailwind components;
-  @tailwind utilities;
-  ```
-  1. `App.css` 에 작성된 코드를 요소에 해당하는 컴포넌트 파일에 tailwindcss를 사용하여 새롭게 작성해주세요.
-     1. `App.jsx`
-     2. `components/Content.jsx`
-     3. `components/Header.jsx`
-  2. css는 자유롭게 수정해도 좋습니다.
+1. tailwindcss 설치
+
+```powershell
+npm install tailwindcss postcss autoprefixer
+```
+
+2. config 파일 생성
+
+```powershell
+npx tailwindcss init -p
+```
+
+3. config 파일 content 작성
+4. `index.css`
+
+```powershell
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+```
+
+5. `App.css` 에 작성된 코드를 요소에 해당하는 컴포넌트 파일에 tailwindcss를 사용하여 새롭게 작성해주세요.
+   1. `App.jsx`
+   2. `components/Content.jsx`
+   3. `components/Header.jsx`
+6. css는 자유롭게 수정해도 좋습니다.
