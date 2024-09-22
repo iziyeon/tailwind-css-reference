@@ -1,0 +1,40 @@
+export default function Content({ content }) {
+  return (
+    <div className="flex flex-col items-start gap-[5px]">
+      <img className="w-[300px] rounded-[10px] mb-[3px]"
+      src={content.img} alt={content.title} />
+      <span className="text-[12px] decoration-[#d7fa00] border-solid border-[#d7fa00] p-[4px_5px] rounded-[3px]">모집중</span>
+      <div className ="text-[18px] font-semibold">{content.title}</div>
+      <p className="text-[12px] decoration-[rgb(160, 160, 160)]">{content.subtitle}</p>
+    </div>
+  );
+}
+
+export default function Header() {
+  return (
+    <header className=" flex justify-between	items-center p-[10px_20px] bg-black	">
+      <h2>OZ코딩스쿨</h2>
+      <ul className="flex justify-center items-center gap-[20px]">
+        <li className ="list-none	font-normal	text-[13px] ">로그인</li>
+        <li className ="list-none	font-normal	text-[13px] ">회원가입</li>
+        <li className ="list-none	font-normal	text-[13px] ">내클래스</li>
+      </ul>
+    </header>
+  );
+}
+
+function App() {
+  return (
+    <main>
+      <Header />
+      <section
+        className = "flex flex-wrap	justify-center gap-[20px]	p-[20px_40px]	">
+        {contents.map((el) => (
+          <Content key={el.id} content={el} />
+        ))}
+      </section>
+    </main>
+  );
+}
+
+export default App;
